@@ -1,0 +1,12 @@
+{
+  "supported_languages": [
+    {
+      "id": 1,
+      "code": "fr_FR"
+    },
+    {
+      "id": 2,
+      "code": "fr_CA"
+    }
+  ]
+}

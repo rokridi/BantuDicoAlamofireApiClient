@@ -1,0 +1,21 @@
+{
+  "translations": [
+    
+    {
+      "id": 1,
+      "word": "word 1"
+    },
+    {
+      "id": 2,
+      "word": "word 2"
+    },
+    {
+      "id": 3,
+      "word": "word 3"
+    },
+    {
+      "id": 4,
+      "word": "word 4"
+    }
+    ]
+}

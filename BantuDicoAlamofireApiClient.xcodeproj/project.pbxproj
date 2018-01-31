@@ -1,0 +1,694 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1E692EA92021C5630088FEC7 /* BantuDicoError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E692EA82021C5630088FEC7 /* BantuDicoError.swift */; };
+		1E692EAB2021E09E0088FEC7 /* AFError+BantuDicoError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E692EAA2021E09E0088FEC7 /* AFError+BantuDicoError.swift */; };
+		1E692EAE202221360088FEC7 /* TanslationRequestsStubsSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E692EAD202221360088FEC7 /* TanslationRequestsStubsSpec.swift */; };
+		1E692EB12022253B0088FEC7 /* bonjour_fr_sg_translation.json in Resources */ = {isa = PBXBuildFile; fileRef = 1E692EB02022253B0088FEC7 /* bonjour_fr_sg_translation.json */; };
+		1E692EB3202229A20088FEC7 /* pourquoi_fr_sg_translation.json in Resources */ = {isa = PBXBuildFile; fileRef = 1E692EB2202229A20088FEC7 /* pourquoi_fr_sg_translation.json */; };
+		1EEE4DAA201F1F6E00E31814 /* BantuDicoAlamofireApiClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EEE4DA0201F1F6E00E31814 /* BantuDicoAlamofireApiClient.framework */; };
+		1EEE4DAF201F1F6E00E31814 /* BantuDicoAlamofireApiClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEE4DAE201F1F6E00E31814 /* BantuDicoAlamofireApiClientTests.swift */; };
+		1EEE4DB1201F1F6E00E31814 /* BantuDicoAlamofireApiClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 1EEE4DA3201F1F6E00E31814 /* BantuDicoAlamofireApiClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1EEE4DC2201F203000E31814 /* BantuDicoLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEE4DC0201F202F00E31814 /* BantuDicoLanguage.swift */; };
+		1EEE4DC3201F203000E31814 /* BantuDicoWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEE4DC1201F203000E31814 /* BantuDicoWord.swift */; };
+		1EEE4DC6201F203700E31814 /* BantuDicoAlamofireApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEE4DC4201F203600E31814 /* BantuDicoAlamofireApiClient.swift */; };
+		1EEE4DC7201F203700E31814 /* BantuDicoAlamofireApiEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEE4DC5201F203700E31814 /* BantuDicoAlamofireApiEndpoint.swift */; };
+		1EEE4DCA201F28AD00E31814 /* supported_languages.json in Resources */ = {isa = PBXBuildFile; fileRef = 1EEE4DC9201F28AD00E31814 /* supported_languages.json */; };
+		1EEE4DCC201F28D600E31814 /* invalid_supported_languages.json in Resources */ = {isa = PBXBuildFile; fileRef = 1EEE4DCB201F28D600E31814 /* invalid_supported_languages.json */; };
+		1EEE4DD2201F690100E31814 /* BDLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEE4DD1201F690100E31814 /* BDLanguage.swift */; };
+		1EEE4DD4201F690D00E31814 /* BDWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEE4DD3201F690D00E31814 /* BDWord.swift */; };
+		1EEE4DD6201F7B3800E31814 /* SupportedLanguagesStubsSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEE4DD5201F7B3800E31814 /* SupportedLanguagesStubsSpec.swift */; };
+		1EEE4DD8201F876500E31814 /* valid_bdlanguage.json in Resources */ = {isa = PBXBuildFile; fileRef = 1EEE4DD7201F876500E31814 /* valid_bdlanguage.json */; };
+		1EEE4DDA201F878500E31814 /* invalid_bdlanguage.json in Resources */ = {isa = PBXBuildFile; fileRef = 1EEE4DD9201F878500E31814 /* invalid_bdlanguage.json */; };
+		1EEE4DDC201F87A900E31814 /* BDLanguageStubsSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEE4DDB201F87A900E31814 /* BDLanguageStubsSpec.swift */; };
+		1EEE4DDE202067A800E31814 /* valid_word_translation.json in Resources */ = {isa = PBXBuildFile; fileRef = 1EEE4DDD202067A800E31814 /* valid_word_translation.json */; };
+		1EEE4DE0202067CF00E31814 /* invalid_word_translation.json in Resources */ = {isa = PBXBuildFile; fileRef = 1EEE4DDF202067CE00E31814 /* invalid_word_translation.json */; };
+		1EEE4DE22020681800E31814 /* TranslationStubsSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEE4DE12020681800E31814 /* TranslationStubsSpec.swift */; };
+		1EEE4DE42020806100E31814 /* TestsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEE4DE32020806100E31814 /* TestsHelper.swift */; };
+		CB5FCB4B9053459F4618B5C8 /* Pods_BantuDicoAlamofireApiClientTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCB73657343286AC6BAF4AAC /* Pods_BantuDicoAlamofireApiClientTests.framework */; };
+		FADA8E1868D570743B708EA5 /* Pods_BantuDicoAlamofireApiClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC0B7721B17A81DAD649AB52 /* Pods_BantuDicoAlamofireApiClient.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1EEE4DAB201F1F6E00E31814 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1EEE4D97201F1F6E00E31814 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1EEE4D9F201F1F6E00E31814;
+			remoteInfo = BantuDicoAlamofireApiClient;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1BDC3EE6E35F84AAB31B8557 /* Pods-BantuDicoAlamofireApiClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BantuDicoAlamofireApiClient.release.xcconfig"; path = "Pods/Target Support Files/Pods-BantuDicoAlamofireApiClient/Pods-BantuDicoAlamofireApiClient.release.xcconfig"; sourceTree = "<group>"; };
+		1E692EA82021C5630088FEC7 /* BantuDicoError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BantuDicoError.swift; sourceTree = "<group>"; };
+		1E692EAA2021E09E0088FEC7 /* AFError+BantuDicoError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AFError+BantuDicoError.swift"; sourceTree = "<group>"; };
+		1E692EAD202221360088FEC7 /* TanslationRequestsStubsSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TanslationRequestsStubsSpec.swift; sourceTree = "<group>"; };
+		1E692EB02022253B0088FEC7 /* bonjour_fr_sg_translation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = bonjour_fr_sg_translation.json; sourceTree = "<group>"; };
+		1E692EB2202229A20088FEC7 /* pourquoi_fr_sg_translation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = pourquoi_fr_sg_translation.json; sourceTree = "<group>"; };
+		1EEE4DA0201F1F6E00E31814 /* BantuDicoAlamofireApiClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BantuDicoAlamofireApiClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1EEE4DA3201F1F6E00E31814 /* BantuDicoAlamofireApiClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BantuDicoAlamofireApiClient.h; sourceTree = "<group>"; };
+		1EEE4DA4201F1F6E00E31814 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1EEE4DA9201F1F6E00E31814 /* BantuDicoAlamofireApiClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BantuDicoAlamofireApiClientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1EEE4DAE201F1F6E00E31814 /* BantuDicoAlamofireApiClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BantuDicoAlamofireApiClientTests.swift; sourceTree = "<group>"; };
+		1EEE4DB0201F1F6E00E31814 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1EEE4DC0201F202F00E31814 /* BantuDicoLanguage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BantuDicoLanguage.swift; sourceTree = "<group>"; };
+		1EEE4DC1201F203000E31814 /* BantuDicoWord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BantuDicoWord.swift; sourceTree = "<group>"; };
+		1EEE4DC4201F203600E31814 /* BantuDicoAlamofireApiClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BantuDicoAlamofireApiClient.swift; sourceTree = "<group>"; };
+		1EEE4DC5201F203700E31814 /* BantuDicoAlamofireApiEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BantuDicoAlamofireApiEndpoint.swift; sourceTree = "<group>"; };
+		1EEE4DC9201F28AD00E31814 /* supported_languages.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = supported_languages.json; sourceTree = "<group>"; };
+		1EEE4DCB201F28D600E31814 /* invalid_supported_languages.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = invalid_supported_languages.json; sourceTree = "<group>"; };
+		1EEE4DD1201F690100E31814 /* BDLanguage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BDLanguage.swift; sourceTree = "<group>"; };
+		1EEE4DD3201F690D00E31814 /* BDWord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BDWord.swift; sourceTree = "<group>"; };
+		1EEE4DD5201F7B3800E31814 /* SupportedLanguagesStubsSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportedLanguagesStubsSpec.swift; sourceTree = "<group>"; };
+		1EEE4DD7201F876500E31814 /* valid_bdlanguage.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = valid_bdlanguage.json; sourceTree = "<group>"; };
+		1EEE4DD9201F878500E31814 /* invalid_bdlanguage.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = invalid_bdlanguage.json; sourceTree = "<group>"; };
+		1EEE4DDB201F87A900E31814 /* BDLanguageStubsSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BDLanguageStubsSpec.swift; sourceTree = "<group>"; };
+		1EEE4DDD202067A800E31814 /* valid_word_translation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = valid_word_translation.json; sourceTree = "<group>"; };
+		1EEE4DDF202067CE00E31814 /* invalid_word_translation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = invalid_word_translation.json; sourceTree = "<group>"; };
+		1EEE4DE12020681800E31814 /* TranslationStubsSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationStubsSpec.swift; sourceTree = "<group>"; };
+		1EEE4DE32020806100E31814 /* TestsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestsHelper.swift; sourceTree = "<group>"; };
+		7A98CE29C66F48C8BC35BA75 /* Pods-BantuDicoAlamofireApiClient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BantuDicoAlamofireApiClient.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BantuDicoAlamofireApiClient/Pods-BantuDicoAlamofireApiClient.debug.xcconfig"; sourceTree = "<group>"; };
+		B5B35871AD5C2E545347BDEF /* Pods-BantuDicoAlamofireApiClientTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BantuDicoAlamofireApiClientTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BantuDicoAlamofireApiClientTests/Pods-BantuDicoAlamofireApiClientTests.release.xcconfig"; sourceTree = "<group>"; };
+		BC0B7721B17A81DAD649AB52 /* Pods_BantuDicoAlamofireApiClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BantuDicoAlamofireApiClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCB73657343286AC6BAF4AAC /* Pods_BantuDicoAlamofireApiClientTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BantuDicoAlamofireApiClientTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAA1CA2715EB46D5CB8FF34B /* Pods-BantuDicoAlamofireApiClientTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BantuDicoAlamofireApiClientTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BantuDicoAlamofireApiClientTests/Pods-BantuDicoAlamofireApiClientTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1EEE4D9C201F1F6E00E31814 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FADA8E1868D570743B708EA5 /* Pods_BantuDicoAlamofireApiClient.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1EEE4DA6201F1F6E00E31814 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EEE4DAA201F1F6E00E31814 /* BantuDicoAlamofireApiClient.framework in Frameworks */,
+				CB5FCB4B9053459F4618B5C8 /* Pods_BantuDicoAlamofireApiClientTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1E692EAC2021F63D0088FEC7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1E692EAA2021E09E0088FEC7 /* AFError+BantuDicoError.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		1EEE4D96201F1F6E00E31814 = {
+			isa = PBXGroup;
+			children = (
+				1EEE4DA2201F1F6E00E31814 /* BantuDicoAlamofireApiClient */,
+				1EEE4DAD201F1F6E00E31814 /* BantuDicoAlamofireApiClientTests */,
+				8871E5654E923DF6AEB9C611 /* Pods */,
+				CD8D4CF906436C34C3AFBBC1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1EEE4DA1201F1F6E00E31814 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1EEE4DA0201F1F6E00E31814 /* BantuDicoAlamofireApiClient.framework */,
+				1EEE4DA9201F1F6E00E31814 /* BantuDicoAlamofireApiClientTests.xctest */,
+			);
+			name = Products;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		1EEE4DA2201F1F6E00E31814 /* BantuDicoAlamofireApiClient */ = {
+			isa = PBXGroup;
+			children = (
+				1EEE4DA3201F1F6E00E31814 /* BantuDicoAlamofireApiClient.h */,
+				1EEE4DBE201F201C00E31814 /* Model */,
+				1EEE4DBF201F202400E31814 /* Service */,
+				1E692EAC2021F63D0088FEC7 /* Extensions */,
+				1EEE4DA4201F1F6E00E31814 /* Info.plist */,
+			);
+			path = BantuDicoAlamofireApiClient;
+			sourceTree = "<group>";
+		};
+		1EEE4DAD201F1F6E00E31814 /* BantuDicoAlamofireApiClientTests */ = {
+			isa = PBXGroup;
+			children = (
+				1EEE4DC8201F286F00E31814 /* JSON */,
+				1EEE4DE32020806100E31814 /* TestsHelper.swift */,
+				1EEE4DDB201F87A900E31814 /* BDLanguageStubsSpec.swift */,
+				1EEE4DD5201F7B3800E31814 /* SupportedLanguagesStubsSpec.swift */,
+				1E692EAD202221360088FEC7 /* TanslationRequestsStubsSpec.swift */,
+				1EEE4DAE201F1F6E00E31814 /* BantuDicoAlamofireApiClientTests.swift */,
+				1EEE4DE12020681800E31814 /* TranslationStubsSpec.swift */,
+				1EEE4DA1201F1F6E00E31814 /* Products */,
+				1EEE4DB0201F1F6E00E31814 /* Info.plist */,
+			);
+			path = BantuDicoAlamofireApiClientTests;
+			sourceTree = "<group>";
+		};
+		1EEE4DBE201F201C00E31814 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1EEE4DD3201F690D00E31814 /* BDWord.swift */,
+				1EEE4DD1201F690100E31814 /* BDLanguage.swift */,
+				1EEE4DC1201F203000E31814 /* BantuDicoWord.swift */,
+				1EEE4DC0201F202F00E31814 /* BantuDicoLanguage.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1EEE4DBF201F202400E31814 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				1EEE4DC4201F203600E31814 /* BantuDicoAlamofireApiClient.swift */,
+				1EEE4DC5201F203700E31814 /* BantuDicoAlamofireApiEndpoint.swift */,
+				1E692EA82021C5630088FEC7 /* BantuDicoError.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		1EEE4DC8201F286F00E31814 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				1EEE4DC9201F28AD00E31814 /* supported_languages.json */,
+				1EEE4DCB201F28D600E31814 /* invalid_supported_languages.json */,
+				1EEE4DD7201F876500E31814 /* valid_bdlanguage.json */,
+				1EEE4DD9201F878500E31814 /* invalid_bdlanguage.json */,
+				1EEE4DDD202067A800E31814 /* valid_word_translation.json */,
+				1EEE4DDF202067CE00E31814 /* invalid_word_translation.json */,
+				1E692EB02022253B0088FEC7 /* bonjour_fr_sg_translation.json */,
+				1E692EB2202229A20088FEC7 /* pourquoi_fr_sg_translation.json */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		8871E5654E923DF6AEB9C611 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7A98CE29C66F48C8BC35BA75 /* Pods-BantuDicoAlamofireApiClient.debug.xcconfig */,
+				1BDC3EE6E35F84AAB31B8557 /* Pods-BantuDicoAlamofireApiClient.release.xcconfig */,
+				EAA1CA2715EB46D5CB8FF34B /* Pods-BantuDicoAlamofireApiClientTests.debug.xcconfig */,
+				B5B35871AD5C2E545347BDEF /* Pods-BantuDicoAlamofireApiClientTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CD8D4CF906436C34C3AFBBC1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BC0B7721B17A81DAD649AB52 /* Pods_BantuDicoAlamofireApiClient.framework */,
+				CCB73657343286AC6BAF4AAC /* Pods_BantuDicoAlamofireApiClientTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1EEE4D9D201F1F6E00E31814 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EEE4DB1201F1F6E00E31814 /* BantuDicoAlamofireApiClient.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1EEE4D9F201F1F6E00E31814 /* BantuDicoAlamofireApiClient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1EEE4DB4201F1F6E00E31814 /* Build configuration list for PBXNativeTarget "BantuDicoAlamofireApiClient" */;
+			buildPhases = (
+				336195363B787E1D25EC6D8B /* [CP] Check Pods Manifest.lock */,
+				1EEE4D9B201F1F6E00E31814 /* Sources */,
+				1EEE4D9C201F1F6E00E31814 /* Frameworks */,
+				1EEE4D9D201F1F6E00E31814 /* Headers */,
+				1EEE4D9E201F1F6E00E31814 /* Resources */,
+				C8B15FC2C06479FB4A7D493B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BantuDicoAlamofireApiClient;
+			productName = BantuDicoAlamofireApiClient;
+			productReference = 1EEE4DA0201F1F6E00E31814 /* BantuDicoAlamofireApiClient.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		1EEE4DA8201F1F6E00E31814 /* BantuDicoAlamofireApiClientTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1EEE4DB7201F1F6E00E31814 /* Build configuration list for PBXNativeTarget "BantuDicoAlamofireApiClientTests" */;
+			buildPhases = (
+				7B53D3E556A3ADF0313B95C9 /* [CP] Check Pods Manifest.lock */,
+				1EEE4DA5201F1F6E00E31814 /* Sources */,
+				1EEE4DA6201F1F6E00E31814 /* Frameworks */,
+				1EEE4DA7201F1F6E00E31814 /* Resources */,
+				6B7CB58F93E7B851240B0505 /* [CP] Embed Pods Frameworks */,
+				AC2F27A797A56D659BA8CC7A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1EEE4DAC201F1F6E00E31814 /* PBXTargetDependency */,
+			);
+			name = BantuDicoAlamofireApiClientTests;
+			productName = BantuDicoAlamofireApiClientTests;
+			productReference = 1EEE4DA9201F1F6E00E31814 /* BantuDicoAlamofireApiClientTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1EEE4D97201F1F6E00E31814 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = Rokridi;
+				TargetAttributes = {
+					1EEE4D9F201F1F6E00E31814 = {
+						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
+						ProvisioningStyle = Automatic;
+					};
+					1EEE4DA8201F1F6E00E31814 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 1EEE4D9A201F1F6E00E31814 /* Build configuration list for PBXProject "BantuDicoAlamofireApiClient" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1EEE4D96201F1F6E00E31814;
+			productRefGroup = 1EEE4DA1201F1F6E00E31814 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1EEE4D9F201F1F6E00E31814 /* BantuDicoAlamofireApiClient */,
+				1EEE4DA8201F1F6E00E31814 /* BantuDicoAlamofireApiClientTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1EEE4D9E201F1F6E00E31814 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1EEE4DA7201F1F6E00E31814 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E692EB12022253B0088FEC7 /* bonjour_fr_sg_translation.json in Resources */,
+				1EEE4DDA201F878500E31814 /* invalid_bdlanguage.json in Resources */,
+				1E692EB3202229A20088FEC7 /* pourquoi_fr_sg_translation.json in Resources */,
+				1EEE4DDE202067A800E31814 /* valid_word_translation.json in Resources */,
+				1EEE4DCC201F28D600E31814 /* invalid_supported_languages.json in Resources */,
+				1EEE4DCA201F28AD00E31814 /* supported_languages.json in Resources */,
+				1EEE4DE0202067CF00E31814 /* invalid_word_translation.json in Resources */,
+				1EEE4DD8201F876500E31814 /* valid_bdlanguage.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		336195363B787E1D25EC6D8B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BantuDicoAlamofireApiClient-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6B7CB58F93E7B851240B0505 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-BantuDicoAlamofireApiClientTests/Pods-BantuDicoAlamofireApiClientTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/OHHTTPStubs/OHHTTPStubs.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OHHTTPStubs.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BantuDicoAlamofireApiClientTests/Pods-BantuDicoAlamofireApiClientTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7B53D3E556A3ADF0313B95C9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BantuDicoAlamofireApiClientTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AC2F27A797A56D659BA8CC7A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BantuDicoAlamofireApiClientTests/Pods-BantuDicoAlamofireApiClientTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C8B15FC2C06479FB4A7D493B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BantuDicoAlamofireApiClient/Pods-BantuDicoAlamofireApiClient-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1EEE4D9B201F1F6E00E31814 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EEE4DC2201F203000E31814 /* BantuDicoLanguage.swift in Sources */,
+				1EEE4DD4201F690D00E31814 /* BDWord.swift in Sources */,
+				1EEE4DC3201F203000E31814 /* BantuDicoWord.swift in Sources */,
+				1EEE4DC7201F203700E31814 /* BantuDicoAlamofireApiEndpoint.swift in Sources */,
+				1EEE4DD2201F690100E31814 /* BDLanguage.swift in Sources */,
+				1EEE4DC6201F203700E31814 /* BantuDicoAlamofireApiClient.swift in Sources */,
+				1E692EAB2021E09E0088FEC7 /* AFError+BantuDicoError.swift in Sources */,
+				1E692EA92021C5630088FEC7 /* BantuDicoError.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1EEE4DA5201F1F6E00E31814 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EEE4DE22020681800E31814 /* TranslationStubsSpec.swift in Sources */,
+				1E692EAE202221360088FEC7 /* TanslationRequestsStubsSpec.swift in Sources */,
+				1EEE4DAF201F1F6E00E31814 /* BantuDicoAlamofireApiClientTests.swift in Sources */,
+				1EEE4DDC201F87A900E31814 /* BDLanguageStubsSpec.swift in Sources */,
+				1EEE4DE42020806100E31814 /* TestsHelper.swift in Sources */,
+				1EEE4DD6201F7B3800E31814 /* SupportedLanguagesStubsSpec.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1EEE4DAC201F1F6E00E31814 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1EEE4D9F201F1F6E00E31814 /* BantuDicoAlamofireApiClient */;
+			targetProxy = 1EEE4DAB201F1F6E00E31814 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1EEE4DB2201F1F6E00E31814 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1EEE4DB3201F1F6E00E31814 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1EEE4DB5201F1F6E00E31814 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A98CE29C66F48C8BC35BA75 /* Pods-BantuDicoAlamofireApiClient.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = BantuDicoAlamofireApiClient/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = rokridi.BantuDicoAlamofireApiClient;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1EEE4DB6201F1F6E00E31814 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1BDC3EE6E35F84AAB31B8557 /* Pods-BantuDicoAlamofireApiClient.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = BantuDicoAlamofireApiClient/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = rokridi.BantuDicoAlamofireApiClient;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1EEE4DB8201F1F6E00E31814 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EAA1CA2715EB46D5CB8FF34B /* Pods-BantuDicoAlamofireApiClientTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BantuDicoAlamofireApiClientTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = rokridi.BantuDicoAlamofireApiClientTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1EEE4DB9201F1F6E00E31814 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5B35871AD5C2E545347BDEF /* Pods-BantuDicoAlamofireApiClientTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BantuDicoAlamofireApiClientTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = rokridi.BantuDicoAlamofireApiClientTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1EEE4D9A201F1F6E00E31814 /* Build configuration list for PBXProject "BantuDicoAlamofireApiClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1EEE4DB2201F1F6E00E31814 /* Debug */,
+				1EEE4DB3201F1F6E00E31814 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1EEE4DB4201F1F6E00E31814 /* Build configuration list for PBXNativeTarget "BantuDicoAlamofireApiClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1EEE4DB5201F1F6E00E31814 /* Debug */,
+				1EEE4DB6201F1F6E00E31814 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1EEE4DB7201F1F6E00E31814 /* Build configuration list for PBXNativeTarget "BantuDicoAlamofireApiClientTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1EEE4DB8201F1F6E00E31814 /* Debug */,
+				1EEE4DB9201F1F6E00E31814 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1EEE4D97201F1F6E00E31814 /* Project object */;
+}
