@@ -1,2 +1,2 @@
 # BantuDicoalamofireApiClient
-Bantu Dico HTTP client built over Alamofire
+Bantu Dico HTTP client built over Alamofire library
