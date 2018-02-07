@@ -10,6 +10,7 @@ import Foundation
 import Quick
 import Nimble
 import OHHTTPStubs
+import Alamofire
 
 @testable import BantuDicoAlamofireApiClient
 
@@ -51,11 +52,12 @@ class SupportedLanguagesStubsSpec: QuickSpec {
                     })
                 })
             })
-            
+ 
             context("Unecceptable status code", {
+                
                 it("Returns roor code 400", closure: {
                     
-                    let unacceptableStatusCode400Error = BantuDicoAFError.responseValidationFailed(reason: .unacceptableStatusCode(code: 400))
+                    let unacceptableStatusCode400Error = AFError.responseValidationFailed(reason: .unacceptableStatusCode(code: 400))
                     
                     stub(condition: isHost("google.fr")) { request in
                         return OHHTTPStubsResponse(error: unacceptableStatusCode400Error)
@@ -77,7 +79,7 @@ class SupportedLanguagesStubsSpec: QuickSpec {
                 
                 it("Returns roor code 404", closure: {
                     
-                    let unacceptableStatusCode400Error = BantuDicoAFError.responseValidationFailed(reason: .unacceptableStatusCode(code: 404))
+                    let unacceptableStatusCode400Error = AFError.responseValidationFailed(reason: .unacceptableStatusCode(code: 404))
                     
                     stub(condition: isHost("google.fr")) { request in
                         return OHHTTPStubsResponse(error: unacceptableStatusCode400Error)
@@ -99,7 +101,11 @@ class SupportedLanguagesStubsSpec: QuickSpec {
                 
                 it("Returns error code 500", closure: {
                     
-                    TestsHelper.stubWithHost("", httpCode: 500)
+                    let statusCodeError = AFError.responseValidationFailed(reason: .unacceptableStatusCode(code: 500))
+                    
+                    stub(condition: {_ in true}) { request in
+                        return OHHTTPStubsResponse(error: statusCodeError)
+                    }
                     
                     waitUntil(action: { done in
                         let _ = apiClient.fetchSupportedLanguages(completion: { (_, error) in
@@ -107,9 +113,8 @@ class SupportedLanguagesStubsSpec: QuickSpec {
                             if case BantuDicoAFError.responseValidationFailed(reason: .unacceptableStatusCode(code: let code)) = error as! BantuDicoAFError {
                                 expect(code).to(equal(500))
                             } else {
-                                fail("Reason should be of type unacceptableContentType with code 500")
+                                fail("Reason should be of type unacceptableStatusCode with code 500")
                             }
-                            
                             done()
                         })
                     })
@@ -119,7 +124,7 @@ class SupportedLanguagesStubsSpec: QuickSpec {
             context("Unecceptable response content type", {
                 it("Error should be unacceptableContentType", closure: {
                     
-                    let contentTypeError = BantuDicoAFError.responseValidationFailed(reason: .unacceptableContentType(acceptableContentTypes: ["JSON"], responseContentType: "XML"))
+                    let contentTypeError = AFError.responseValidationFailed(reason: .unacceptableContentType(acceptableContentTypes: ["JSON"], responseContentType: "XML"))
                     
                     stub(condition: {_ in true}) { request in
                         return OHHTTPStubsResponse(error: contentTypeError)
