@@ -20,6 +20,20 @@
                ReferencedContainer = "container:BantuDicoAlamofireApiClient.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "1EEE4DA8201F1F6E00E31814"
+               BuildableName = "BantuDicoAlamofireApiClientTests.xctest"
+               BlueprintName = "BantuDicoAlamofireApiClientTests"
+               ReferencedContainer = "container:BantuDicoAlamofireApiClient.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
