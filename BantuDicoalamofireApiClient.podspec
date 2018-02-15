@@ -24,10 +24,10 @@ Pod::Spec.new do |s|
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-  s.description  = A network utility for calling Bantu Dico APIs.
 
-  s.homepage     = "http://EXAMPLE/BantuDicoalamofireApiClient"
-  # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
+  s.description  = "A network utility for calling Bantu Dico APIs."
+
+  s.homepage     = "https://github.com/rokridi/BantuDicoalamofireApiClient"
 
 
   # ―――  Spec License  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -38,7 +38,6 @@ Pod::Spec.new do |s|
   #
 
   s.license      = "MIT"
-
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -68,7 +67,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "http://EXAMPLE/BantuDicoalamofireApiClient.git" }
+  s.source       = { :git => "https://github.com/rokridi/BantuDicoalamofireApiClient.git" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
