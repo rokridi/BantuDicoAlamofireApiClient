@@ -30,7 +30,7 @@ class TranslationStubsSpec: QuickSpec {
                     let array = dictionary["translations"]
                     let translations = try? mapper.mapArray(JSONArray: array as! [[String : Any]])
                     
-                    expect(translations).to(beNil())
+                    expect(translations).toNot(beNil())
                 })
             })
             

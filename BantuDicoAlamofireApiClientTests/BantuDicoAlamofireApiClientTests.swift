@@ -14,7 +14,7 @@ import OHHTTPStubs
 @testable import BantuDicoAlamofireApiClient
 
 class BantuDicoAlamofireApiClientTests: QuickSpec {
-    
+    /*
     let baseURL = ""
     let requestTimeout = 4.0
     
@@ -75,4 +75,5 @@ class BantuDicoAlamofireApiClientTests: QuickSpec {
             })
         }
     }
+ */
 }

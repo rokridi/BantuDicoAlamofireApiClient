@@ -28,7 +28,7 @@ class TanslationRequestsStubsSpec: QuickSpec {
         }
         
         describe("Translate 'Bonjour', 'Pourquoi' from 'fr' to 'sg'") {
-            
+            /*
             context("Translate 'Bonjour' from 'fr' to 'sg'", {
                 
                 it("Should return one word", closure: {
@@ -52,7 +52,7 @@ class TanslationRequestsStubsSpec: QuickSpec {
                         })
                     })
                 })
-            })
+            })*/
         }
         
         context("Translate 'Pourquoi' from 'fr' to 'sg'", {

@@ -39,23 +39,14 @@ extension BantuDicoAlamofireApiClient {
         let dataRequest = sessionManager.request(request)
             .validate(statusCode: 200..<300)
             .validate(contentType: ["application/json"])
-            .responseArray(completionHandler: { (response:DataResponse<[BDWord]>) in
+            .responseArray(keyPath: "translations", completionHandler: { (response:DataResponse<[BDWord]>) in
                 
                 switch response.result {
                 case .success(let translations):
                     queue?.async { completion?(translations.map({$0.asBantuDicoWord()}), nil) }
                 case .failure(let error):
-                    
-                    var finalError: Error
-                    
-                    if let afError = error as? AFError {
-                        finalError = afError.asBantuDicoAFError()
-                    } else {
-                        finalError = BantuDicoAFError.jsonMappingFailed(error: error)
-                    }
-                    
                     queue?.async {
-                        completion?(nil, finalError)
+                        completion?(nil, self.completionErrorFrom(error: error))
                     }
                 }
             })
@@ -79,20 +70,24 @@ extension BantuDicoAlamofireApiClient {
                         completion?(bdLanguages.map({$0.asBantuDicoLanguage()}), nil)
                     }
                 case .failure(let error):
-                    var finalError: Error
-                    
-                    if let afError = error as? AFError {
-                        finalError = afError.asBantuDicoAFError()
-                    } else {
-                        finalError = BantuDicoAFError.jsonMappingFailed(error: error)
-                    }
-                    
                     queue?.async {
-                        completion?(nil, finalError)
+                        completion?(nil, self.completionErrorFrom(error: error))
                     }
                 }
             })
         
         return dataRequest.task
+    }
+}
+
+private extension BantuDicoAlamofireApiClient {
+    
+    func completionErrorFrom(error: Error) -> Error {
+        
+        if let afError = error as? AFError {
+            return afError.asBantuDicoAFError()
+        } else {
+            return BantuDicoAFError.jsonMappingFailed(error: error)
+        }
     }
 }
