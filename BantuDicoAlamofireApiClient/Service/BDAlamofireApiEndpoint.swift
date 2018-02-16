@@ -9,7 +9,7 @@
 import Foundation
 import Alamofire
 
-enum BantuDicoAlamofireApiEndpoint: URLRequestConvertible {
+enum BDAlamofireApiEndpoint: URLRequestConvertible {
     
     case translate(String, String, String, String)
     case supportedLanguages(String)

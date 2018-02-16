@@ -34,7 +34,7 @@ extension BantuDicoAlamofireApiClient {
                    queue: DispatchQueue? = DispatchQueue.main,
                    completion: TranslationCompletionHandler?) -> URLSessionTask? {
         
-        let request = BantuDicoAlamofireApiEndpoint.translate(word, sourceLanguage, destinationLanguage, baseURL)
+        let request = BDAlamofireApiEndpoint.translate(word, sourceLanguage, destinationLanguage, baseURL)
         
         let dataRequest = sessionManager.request(request)
             .validate(statusCode: 200..<300)
@@ -57,7 +57,7 @@ extension BantuDicoAlamofireApiClient {
     public func fetchSupportedLanguages(queue: DispatchQueue? = DispatchQueue.main,
                                  completion: SupportedLanguagesCompletionHandler?) -> URLSessionTask? {
         
-        let request = BantuDicoAlamofireApiEndpoint.supportedLanguages(baseURL)
+        let request = BDAlamofireApiEndpoint.supportedLanguages(baseURL)
         
         let dataRequest = sessionManager.request(request)
             .validate(statusCode: 200..<300)
