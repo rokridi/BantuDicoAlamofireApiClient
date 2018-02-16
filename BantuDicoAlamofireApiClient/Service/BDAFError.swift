@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum BDAFError {
+public enum BDAFError {
     
     /// The underlying reason the parameter encoding error occurred.
     ///
