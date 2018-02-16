@@ -10,8 +10,8 @@ import Foundation
 import Alamofire
 import AlamofireObjectMapper
 
-typealias TranslationCompletionHandler = ([BantuDicoWord]?, Error?) -> Void
-typealias SupportedLanguagesCompletionHandler = ([BantuDicoLanguage]?, Error?) -> Void
+typealias TranslationCompletionHandler = ([BDAFWord]?, Error?) -> Void
+typealias SupportedLanguagesCompletionHandler = ([BDAFLanguage]?, Error?) -> Void
 
 class BantuDicoAlamofireApiClient {
     
@@ -39,11 +39,11 @@ extension BantuDicoAlamofireApiClient {
         let dataRequest = sessionManager.request(request)
             .validate(statusCode: 200..<300)
             .validate(contentType: ["application/json"])
-            .responseArray(keyPath: "translations", completionHandler: { (response:DataResponse<[BDWord]>) in
+            .responseArray(keyPath: "translations", completionHandler: { (response:DataResponse<[BantuDicoAFWord]>) in
                 
                 switch response.result {
                 case .success(let translations):
-                    queue?.async { completion?(translations.map({$0.asBantuDicoWord()}), nil) }
+                    queue?.async { completion?(translations.map({$0.asBDAFWord()}), nil) }
                 case .failure(let error):
                     queue?.async {
                         completion?(nil, self.completionErrorFrom(error: error))
@@ -62,12 +62,12 @@ extension BantuDicoAlamofireApiClient {
         let dataRequest = sessionManager.request(request)
             .validate(statusCode: 200..<300)
             .validate(contentType: ["application/json"])
-            .responseArray(keyPath: "supported_languages", completionHandler: { (response:DataResponse<[BDLanguage]>) in
+            .responseArray(keyPath: "supported_languages", completionHandler: { (response:DataResponse<[BantuDicoAFLanguage]>) in
                 
                 switch response.result {
                 case .success(let bdLanguages):
                     queue?.async {
-                        completion?(bdLanguages.map({$0.asBantuDicoLanguage()}), nil)
+                        completion?(bdLanguages.map({$0.asBDAFLanguage()}), nil)
                     }
                 case .failure(let error):
                     queue?.async {

@@ -24,7 +24,7 @@ class BDLanguageStubsSpec: QuickSpec {
                 
                 it("should not be nil", closure: {
                     
-                    let bdLanguage = try? BDLanguage(JSONObject: TestsHelper.JSONFromFile("valid_bdlanguage") ?? [:])
+                    let bdLanguage = try? BantuDicoAFLanguage(JSONObject: TestsHelper.JSONFromFile("valid_bdlanguage") ?? [:])
                     expect(bdLanguage).toEventuallyNot(beNil())
                 })
             })
@@ -33,7 +33,7 @@ class BDLanguageStubsSpec: QuickSpec {
                 
                 it("should be nil", closure: {
                     
-                    let bdLanguage = try? BDLanguage(JSONObject: TestsHelper.JSONFromFile("invalid_bdlanguage") ?? [:])
+                    let bdLanguage = try? BantuDicoAFLanguage(JSONObject: TestsHelper.JSONFromFile("invalid_bdlanguage") ?? [:])
                     expect(bdLanguage).toEventually(beNil())
                 })
             })

@@ -25,7 +25,7 @@ class TranslationStubsSpec: QuickSpec {
                 
                 it("Should not be nil", closure: {
                     
-                    let mapper = Mapper<BDWord>()
+                    let mapper = Mapper<BantuDicoAFWord>()
                     let dictionary = TestsHelper.JSONFromFile("valid_word_translation")!
                     let array = dictionary["translations"]
                     let translations = try? mapper.mapArray(JSONArray: array as! [[String : Any]])
@@ -38,7 +38,7 @@ class TranslationStubsSpec: QuickSpec {
                 
                 it("Should be nil", closure: {
                     
-                    let mapper = Mapper<BDWord>()
+                    let mapper = Mapper<BantuDicoAFWord>()
                     let dictionary = TestsHelper.JSONFromFile("invalid_word_translation")!
                     let array = dictionary["translations"]
                     let translations = try? mapper.mapArray(JSONArray: array as! [[String : Any]])

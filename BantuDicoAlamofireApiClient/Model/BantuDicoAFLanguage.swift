@@ -1,5 +1,5 @@
 //
-//  BDLanguage.swift
+//  BantuDicoLanguage.swift
 //  BantuDicoAlamofireApiClient
 //
 //  Created by Mohamed Aymen Landolsi on 29/01/2018.
@@ -9,7 +9,7 @@
 import Foundation
 import ObjectMapper
 
-struct BDLanguage: ImmutableMappable {
+struct BantuDicoAFLanguage: ImmutableMappable {
     
     let identifier: Int
     let code: String
@@ -20,9 +20,9 @@ struct BDLanguage: ImmutableMappable {
     }
 }
 
-extension BDLanguage {
+extension BantuDicoAFLanguage {
     
-    func asBantuDicoLanguage() -> BantuDicoLanguage {
-        return BantuDicoLanguage(identifier: identifier, code: code)
+    func asBDAFLanguage() -> BDAFLanguage {
+        return BDAFLanguage(identifier: identifier, code: code)
     }
 }

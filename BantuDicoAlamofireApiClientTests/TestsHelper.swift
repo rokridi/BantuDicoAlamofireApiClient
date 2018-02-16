@@ -36,28 +36,28 @@ class TestsHelper {
         }
     }
     
-    static func bantuDicoLanguagesFromJSONFile(_ file: String) -> [BantuDicoLanguage] {
+    static func bantuDicoLanguagesFromJSONFile(_ file: String) -> [BDAFLanguage] {
         
         let dictionary = TestsHelper.JSONFromFile(file)
         
         let array = dictionary!["supported_languages"]
         
-        let mapper = Mapper<BDLanguage>()
+        let mapper = Mapper<BantuDicoAFLanguage>()
         let translations = mapper.mapArray(JSONObject: array)
         
-        return translations!.map({ $0.asBantuDicoLanguage() })
+        return translations!.map({ $0.asBDAFLanguage() })
     }
     
-    static func bantuDicoWordsFromJSONFile(_ file: String) -> [BantuDicoWord] {
+    static func bantuDicoWordsFromJSONFile(_ file: String) -> [BDAFWord] {
         
         let dictionary = TestsHelper.JSONFromFile(file)
         
         let array = dictionary!["translations"]
         
-        let mapper = Mapper<BDWord>()
+        let mapper = Mapper<BantuDicoAFWord>()
         let translations = mapper.mapArray(JSONObject: array)
         
-        return translations!.map({ $0.asBantuDicoWord() })
+        return translations!.map({ $0.asBDAFWord() })
     }
 }
 

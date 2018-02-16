@@ -1,5 +1,5 @@
 //
-//  BDWord.swift
+//  BantuDicoAFWord.swift
 //  BantuDicoAlamofireApiClient
 //
 //  Created by Mohamed Aymen Landolsi on 29/01/2018.
@@ -9,7 +9,7 @@
 import Foundation
 import ObjectMapper
 
-struct BDWord: ImmutableMappable {
+struct BantuDicoAFWord: ImmutableMappable {
     
     let identifier: Int
     let word: String
@@ -20,9 +20,9 @@ struct BDWord: ImmutableMappable {
     }
 }
 
-extension BDWord {
+extension BantuDicoAFWord {
     
-    func asBantuDicoWord() -> BantuDicoWord {
-        return BantuDicoWord(identifier: identifier, word: word)
+    func asBDAFWord() -> BDAFWord {
+        return BDAFWord(identifier: identifier, word: word)
     }
 }

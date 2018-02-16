@@ -1,5 +1,5 @@
 //
-//  BantuDicoWord.swift
+//  BDAFWord.swift
 //  Bantu dico
 //
 //  Created by Mohamed Aymen Landolsi on 24/01/2018.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-public struct BantuDicoWord {
+public struct BDAFWord {
     
     let identifier: Int
     let word: String

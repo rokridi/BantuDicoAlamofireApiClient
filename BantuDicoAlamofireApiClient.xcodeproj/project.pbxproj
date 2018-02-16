@@ -15,14 +15,14 @@
 		1EEE4DAA201F1F6E00E31814 /* BantuDicoAlamofireApiClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EEE4DA0201F1F6E00E31814 /* BantuDicoAlamofireApiClient.framework */; };
 		1EEE4DAF201F1F6E00E31814 /* BantuDicoAlamofireApiClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEE4DAE201F1F6E00E31814 /* BantuDicoAlamofireApiClientTests.swift */; };
 		1EEE4DB1201F1F6E00E31814 /* BantuDicoAlamofireApiClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 1EEE4DA3201F1F6E00E31814 /* BantuDicoAlamofireApiClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1EEE4DC2201F203000E31814 /* BantuDicoLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEE4DC0201F202F00E31814 /* BantuDicoLanguage.swift */; };
-		1EEE4DC3201F203000E31814 /* BantuDicoWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEE4DC1201F203000E31814 /* BantuDicoWord.swift */; };
+		1EEE4DC2201F203000E31814 /* BDAFLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEE4DC0201F202F00E31814 /* BDAFLanguage.swift */; };
+		1EEE4DC3201F203000E31814 /* BDAFWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEE4DC1201F203000E31814 /* BDAFWord.swift */; };
 		1EEE4DC6201F203700E31814 /* BantuDicoAlamofireApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEE4DC4201F203600E31814 /* BantuDicoAlamofireApiClient.swift */; };
 		1EEE4DC7201F203700E31814 /* BantuDicoAlamofireApiEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEE4DC5201F203700E31814 /* BantuDicoAlamofireApiEndpoint.swift */; };
 		1EEE4DCA201F28AD00E31814 /* supported_languages.json in Resources */ = {isa = PBXBuildFile; fileRef = 1EEE4DC9201F28AD00E31814 /* supported_languages.json */; };
 		1EEE4DCC201F28D600E31814 /* invalid_supported_languages.json in Resources */ = {isa = PBXBuildFile; fileRef = 1EEE4DCB201F28D600E31814 /* invalid_supported_languages.json */; };
-		1EEE4DD2201F690100E31814 /* BDLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEE4DD1201F690100E31814 /* BDLanguage.swift */; };
-		1EEE4DD4201F690D00E31814 /* BDWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEE4DD3201F690D00E31814 /* BDWord.swift */; };
+		1EEE4DD2201F690100E31814 /* BantuDicoAFLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEE4DD1201F690100E31814 /* BantuDicoAFLanguage.swift */; };
+		1EEE4DD4201F690D00E31814 /* BantuDicoAFWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEE4DD3201F690D00E31814 /* BantuDicoAFWord.swift */; };
 		1EEE4DD6201F7B3800E31814 /* SupportedLanguagesStubsSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEE4DD5201F7B3800E31814 /* SupportedLanguagesStubsSpec.swift */; };
 		1EEE4DD8201F876500E31814 /* valid_bdlanguage.json in Resources */ = {isa = PBXBuildFile; fileRef = 1EEE4DD7201F876500E31814 /* valid_bdlanguage.json */; };
 		1EEE4DDA201F878500E31814 /* invalid_bdlanguage.json in Resources */ = {isa = PBXBuildFile; fileRef = 1EEE4DD9201F878500E31814 /* invalid_bdlanguage.json */; };
@@ -58,14 +58,14 @@
 		1EEE4DA9201F1F6E00E31814 /* BantuDicoAlamofireApiClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BantuDicoAlamofireApiClientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EEE4DAE201F1F6E00E31814 /* BantuDicoAlamofireApiClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BantuDicoAlamofireApiClientTests.swift; sourceTree = "<group>"; };
 		1EEE4DB0201F1F6E00E31814 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1EEE4DC0201F202F00E31814 /* BantuDicoLanguage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BantuDicoLanguage.swift; sourceTree = "<group>"; };
-		1EEE4DC1201F203000E31814 /* BantuDicoWord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BantuDicoWord.swift; sourceTree = "<group>"; };
+		1EEE4DC0201F202F00E31814 /* BDAFLanguage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BDAFLanguage.swift; sourceTree = "<group>"; };
+		1EEE4DC1201F203000E31814 /* BDAFWord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BDAFWord.swift; sourceTree = "<group>"; };
 		1EEE4DC4201F203600E31814 /* BantuDicoAlamofireApiClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BantuDicoAlamofireApiClient.swift; sourceTree = "<group>"; };
 		1EEE4DC5201F203700E31814 /* BantuDicoAlamofireApiEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BantuDicoAlamofireApiEndpoint.swift; sourceTree = "<group>"; };
 		1EEE4DC9201F28AD00E31814 /* supported_languages.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = supported_languages.json; sourceTree = "<group>"; };
 		1EEE4DCB201F28D600E31814 /* invalid_supported_languages.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = invalid_supported_languages.json; sourceTree = "<group>"; };
-		1EEE4DD1201F690100E31814 /* BDLanguage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BDLanguage.swift; sourceTree = "<group>"; };
-		1EEE4DD3201F690D00E31814 /* BDWord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BDWord.swift; sourceTree = "<group>"; };
+		1EEE4DD1201F690100E31814 /* BantuDicoAFLanguage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BantuDicoAFLanguage.swift; sourceTree = "<group>"; };
+		1EEE4DD3201F690D00E31814 /* BantuDicoAFWord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BantuDicoAFWord.swift; sourceTree = "<group>"; };
 		1EEE4DD5201F7B3800E31814 /* SupportedLanguagesStubsSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportedLanguagesStubsSpec.swift; sourceTree = "<group>"; };
 		1EEE4DD7201F876500E31814 /* valid_bdlanguage.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = valid_bdlanguage.json; sourceTree = "<group>"; };
 		1EEE4DD9201F878500E31814 /* invalid_bdlanguage.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = invalid_bdlanguage.json; sourceTree = "<group>"; };
@@ -161,10 +161,10 @@
 		1EEE4DBE201F201C00E31814 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				1EEE4DD3201F690D00E31814 /* BDWord.swift */,
-				1EEE4DD1201F690100E31814 /* BDLanguage.swift */,
-				1EEE4DC1201F203000E31814 /* BantuDicoWord.swift */,
-				1EEE4DC0201F202F00E31814 /* BantuDicoLanguage.swift */,
+				1EEE4DD3201F690D00E31814 /* BantuDicoAFWord.swift */,
+				1EEE4DD1201F690100E31814 /* BantuDicoAFLanguage.swift */,
+				1EEE4DC1201F203000E31814 /* BDAFWord.swift */,
+				1EEE4DC0201F202F00E31814 /* BDAFLanguage.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -435,11 +435,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1EEE4DC2201F203000E31814 /* BantuDicoLanguage.swift in Sources */,
-				1EEE4DD4201F690D00E31814 /* BDWord.swift in Sources */,
-				1EEE4DC3201F203000E31814 /* BantuDicoWord.swift in Sources */,
+				1EEE4DC2201F203000E31814 /* BDAFLanguage.swift in Sources */,
+				1EEE4DD4201F690D00E31814 /* BantuDicoAFWord.swift in Sources */,
+				1EEE4DC3201F203000E31814 /* BDAFWord.swift in Sources */,
 				1EEE4DC7201F203700E31814 /* BantuDicoAlamofireApiEndpoint.swift in Sources */,
-				1EEE4DD2201F690100E31814 /* BDLanguage.swift in Sources */,
+				1EEE4DD2201F690100E31814 /* BantuDicoAFLanguage.swift in Sources */,
 				1EEE4DC6201F203700E31814 /* BantuDicoAlamofireApiClient.swift in Sources */,
 				1E692EAB2021E09E0088FEC7 /* AFError+BantuDicoError.swift in Sources */,
 				1E692EA92021C5630088FEC7 /* BantuDicoError.swift in Sources */,

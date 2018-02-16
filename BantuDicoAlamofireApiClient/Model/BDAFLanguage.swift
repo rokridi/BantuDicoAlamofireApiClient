@@ -1,5 +1,5 @@
 //
-//  BantuDicoLanguage.swift
+//  BDAFLanguage.swift
 //  Bantu dico
 //
 //  Created by Mohamed Aymen Landolsi on 26/01/2018.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-public struct BantuDicoLanguage {
+public struct BDAFLanguage {
     
     let identifier: Int
     let code: String
