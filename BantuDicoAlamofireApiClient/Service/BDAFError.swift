@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum BantuDicoAFError {
+enum BDAFError {
     
     /// The underlying reason the parameter encoding error occurred.
     ///
@@ -68,7 +68,7 @@ enum BantuDicoAFError {
 
 // MARK: - Convenience Properties
 
-extension BantuDicoAFError {
+extension BDAFError {
     
     /// The `Error` returned by a system framework associated with a `.parameterEncodingFailed`,
     /// or `.responseSerializationFailed` error.
@@ -124,7 +124,7 @@ extension BantuDicoAFError {
     }
 }
 
-extension BantuDicoAFError.ParameterEncodingFailureReason {
+extension BDAFError.ParameterEncodingFailureReason {
     var underlyingError: Error? {
         switch self {
         case .jsonEncodingFailed(let error):
@@ -135,7 +135,7 @@ extension BantuDicoAFError.ParameterEncodingFailureReason {
     }
 }
 
-extension BantuDicoAFError.ResponseValidationFailureReason {
+extension BDAFError.ResponseValidationFailureReason {
     var acceptableContentTypes: [String]? {
         switch self {
         case .missingContentType(let types), .unacceptableContentType(let types, _):
@@ -164,7 +164,7 @@ extension BantuDicoAFError.ResponseValidationFailureReason {
     }
 }
 
-extension BantuDicoAFError.ResponseSerializationFailureReason {
+extension BDAFError.ResponseSerializationFailureReason {
     var failedStringEncoding: String.Encoding? {
         switch self {
         case .stringSerializationFailed(let encoding):
@@ -186,7 +186,7 @@ extension BantuDicoAFError.ResponseSerializationFailureReason {
 
 // MARK: - Error Descriptions
 
-extension BantuDicoAFError: LocalizedError {
+extension BDAFError: LocalizedError {
     public var errorDescription: String? {
         switch self {
         case .invalidURL(let url):
@@ -205,7 +205,7 @@ extension BantuDicoAFError: LocalizedError {
     }
 }
 
-extension BantuDicoAFError.ParameterEncodingFailureReason {
+extension BDAFError.ParameterEncodingFailureReason {
     var localizedDescription: String {
         switch self {
         case .missingURL:
@@ -218,7 +218,7 @@ extension BantuDicoAFError.ParameterEncodingFailureReason {
     }
 }
 
-extension BantuDicoAFError.ResponseSerializationFailureReason {
+extension BDAFError.ResponseSerializationFailureReason {
     var localizedDescription: String {
         switch self {
         case .inputDataNil:
@@ -239,7 +239,7 @@ extension BantuDicoAFError.ResponseSerializationFailureReason {
     }
 }
 
-extension BantuDicoAFError.ResponseValidationFailureReason {
+extension BDAFError.ResponseValidationFailureReason {
     var localizedDescription: String {
         switch self {
         case .dataFileNil:

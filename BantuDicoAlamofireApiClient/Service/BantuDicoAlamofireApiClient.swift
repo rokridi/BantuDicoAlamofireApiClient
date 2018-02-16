@@ -87,7 +87,7 @@ private extension BantuDicoAlamofireApiClient {
         if let afError = error as? AFError {
             return afError.asBantuDicoAFError()
         } else {
-            return BantuDicoAFError.jsonMappingFailed(error: error)
+            return BDAFError.jsonMappingFailed(error: error)
         }
     }
 }

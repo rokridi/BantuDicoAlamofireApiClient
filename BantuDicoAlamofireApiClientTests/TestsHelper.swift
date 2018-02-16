@@ -18,7 +18,7 @@ class TestsHelper {
         
         stub(condition: isHost("google.fr")) { request in
             
-            let error = BantuDicoAFError.responseValidationFailed(reason: .unacceptableStatusCode(code: httpCode))
+            let error = BDAFError.responseValidationFailed(reason: .unacceptableStatusCode(code: httpCode))
             return OHHTTPStubsResponse(error: error)
         }
     }

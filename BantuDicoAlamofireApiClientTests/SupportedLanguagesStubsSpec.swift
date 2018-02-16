@@ -66,7 +66,7 @@ class SupportedLanguagesStubsSpec: QuickSpec {
                     waitUntil(action: { done in
                         let _ = apiClient.fetchSupportedLanguages(completion: { (_, error) in
                             
-                            if case BantuDicoAFError.responseValidationFailed(reason: .unacceptableStatusCode(code: let code)) = error as! BantuDicoAFError {
+                            if case BDAFError.responseValidationFailed(reason: .unacceptableStatusCode(code: let code)) = error as! BDAFError {
                                 expect(unacceptableStatusCode400Error.responseCode).to(equal(code))
                             } else {
                                 fail("Reason should be of type unacceptableContentType with code 400")
@@ -88,7 +88,7 @@ class SupportedLanguagesStubsSpec: QuickSpec {
                     waitUntil(action: { done in
                         let _ = apiClient.fetchSupportedLanguages(completion: { (_, error) in
                             
-                            if case BantuDicoAFError.responseValidationFailed(reason: .unacceptableStatusCode(code: let code)) = error as! BantuDicoAFError {
+                            if case BDAFError.responseValidationFailed(reason: .unacceptableStatusCode(code: let code)) = error as! BDAFError {
                                 expect(unacceptableStatusCode400Error.responseCode).to(equal(code))
                             } else {
                                 fail("Reason should be of type unacceptableContentType with code 404.")
@@ -110,7 +110,7 @@ class SupportedLanguagesStubsSpec: QuickSpec {
                     waitUntil(action: { done in
                         let _ = apiClient.fetchSupportedLanguages(completion: { (_, error) in
                             
-                            if case BantuDicoAFError.responseValidationFailed(reason: .unacceptableStatusCode(code: let code)) = error as! BantuDicoAFError {
+                            if case BDAFError.responseValidationFailed(reason: .unacceptableStatusCode(code: let code)) = error as! BDAFError {
                                 expect(code).to(equal(500))
                             } else {
                                 fail("Reason should be of type unacceptableStatusCode with code 500")
@@ -132,9 +132,9 @@ class SupportedLanguagesStubsSpec: QuickSpec {
                     
                     waitUntil(action: { done in
                         let _ = apiClient.fetchSupportedLanguages(completion: { (_, error) in
-                            let bdError = error as! BantuDicoAFError
+                            let bdError = error as! BDAFError
                             
-                            if case BantuDicoAFError.responseValidationFailed(reason: .unacceptableContentType(acceptableContentTypes: _, responseContentType: let responseContentType)) = bdError{
+                            if case BDAFError.responseValidationFailed(reason: .unacceptableContentType(acceptableContentTypes: _, responseContentType: let responseContentType)) = bdError{
                                 expect(contentTypeError.responseContentType).to(equal(responseContentType))
                             } else {
                                 fail("Reason should be of type unacceptableContentType-responseValidationFailed")

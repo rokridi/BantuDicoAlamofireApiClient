@@ -11,7 +11,7 @@ import Alamofire
 
 private extension AFError.ParameterEncodingFailureReason {
     
-    func asBantuDicoParameterEncodingFailureReason() -> BantuDicoAFError.ParameterEncodingFailureReason {
+    func asBantuDicoParameterEncodingFailureReason() -> BDAFError.ParameterEncodingFailureReason {
         switch self {
         case .jsonEncodingFailed(error: let error):
             return .jsonEncodingFailed(error: error)
@@ -25,7 +25,7 @@ private extension AFError.ParameterEncodingFailureReason {
 
 private extension AFError.ResponseSerializationFailureReason {
     
-    func asResponseSerializationFailureReason() -> BantuDicoAFError.ResponseSerializationFailureReason {
+    func asResponseSerializationFailureReason() -> BDAFError.ResponseSerializationFailureReason {
         switch self {
         case .inputDataNil:
             return .inputDataNil
@@ -45,7 +45,7 @@ private extension AFError.ResponseSerializationFailureReason {
 
 private extension AFError.ResponseValidationFailureReason {
     
-    func asResponseValidationFailureReason() -> BantuDicoAFError.ResponseValidationFailureReason {
+    func asResponseValidationFailureReason() -> BDAFError.ResponseValidationFailureReason {
         switch self {
         case .dataFileNil:
             return .dataFileNil
@@ -64,7 +64,7 @@ private extension AFError.ResponseValidationFailureReason {
 
 extension AFError {
     
-    func asBantuDicoAFError() -> BantuDicoAFError {
+    func asBantuDicoAFError() -> BDAFError {
         
         switch self {
         case .invalidURL(url: let urlConvertible):
@@ -76,7 +76,7 @@ extension AFError {
         case .responseSerializationFailed(reason: let reason):
             return .responseSerializationFailed(reason: reason.asResponseSerializationFailureReason())
         default:
-            return BantuDicoAFError.unknownError
+            return BDAFError.unknownError
         }
     }
 }
