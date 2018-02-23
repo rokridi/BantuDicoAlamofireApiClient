@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "BantuDicoAlamofireApiClient"
-  s.version      = "1.1.0"
+  s.version      = "1.1.1"
   s.summary      = "A network utility for calling Bantu Dico APIs."
 
   # This description is used to generate tags and improve search results.
@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description  = "A network utility for calling Bantu Dico APIs."
+  s.description  = "A network utility for translating words using Bantu Dico APIs."
 
   s.homepage     = "https://github.com/rokridi/BantuDicoAlamofireApiClient"
 
@@ -67,7 +67,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/rokridi/BantuDicoAlamofireApiClient.git" }
+  s.source       = { :git => "https://github.com/rokridi/BantuDicoAlamofireApiClient.git", :tag => s.version }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -79,7 +79,6 @@ Pod::Spec.new do |s|
   #
 
   s.source_files  = "BantuDicoAlamofireApiClient/**/*.swift"
-
 
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
