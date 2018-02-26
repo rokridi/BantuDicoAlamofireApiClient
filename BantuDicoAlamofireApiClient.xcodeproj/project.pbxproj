@@ -10,26 +10,24 @@
 		1E692EA92021C5630088FEC7 /* BDAFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E692EA82021C5630088FEC7 /* BDAFError.swift */; };
 		1E692EAB2021E09E0088FEC7 /* AFError+BantuDicoAFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E692EAA2021E09E0088FEC7 /* AFError+BantuDicoAFError.swift */; };
 		1E692EAE202221360088FEC7 /* TanslationRequestsStubsSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E692EAD202221360088FEC7 /* TanslationRequestsStubsSpec.swift */; };
-		1E692EB12022253B0088FEC7 /* bonjour_fr_sg_translation.json in Resources */ = {isa = PBXBuildFile; fileRef = 1E692EB02022253B0088FEC7 /* bonjour_fr_sg_translation.json */; };
-		1E692EB3202229A20088FEC7 /* pourquoi_fr_sg_translation.json in Resources */ = {isa = PBXBuildFile; fileRef = 1E692EB2202229A20088FEC7 /* pourquoi_fr_sg_translation.json */; };
+		1E692EB12022253B0088FEC7 /* hello_en_fr_translation.json in Resources */ = {isa = PBXBuildFile; fileRef = 1E692EB02022253B0088FEC7 /* hello_en_fr_translation.json */; };
+		1EC7E809204070300068EB6E /* BantuDicoAFTranslation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC7E808204070300068EB6E /* BantuDicoAFTranslation.swift */; };
+		1EC7E80B204071020068EB6E /* BDAFTranslation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC7E80A204071020068EB6E /* BDAFTranslation.swift */; };
 		1EEE4DAA201F1F6E00E31814 /* BantuDicoAlamofireApiClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EEE4DA0201F1F6E00E31814 /* BantuDicoAlamofireApiClient.framework */; };
-		1EEE4DAF201F1F6E00E31814 /* BantuDicoAlamofireApiClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEE4DAE201F1F6E00E31814 /* BantuDicoAlamofireApiClientTests.swift */; };
 		1EEE4DB1201F1F6E00E31814 /* BantuDicoAlamofireApiClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 1EEE4DA3201F1F6E00E31814 /* BantuDicoAlamofireApiClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1EEE4DC2201F203000E31814 /* BDAFLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEE4DC0201F202F00E31814 /* BDAFLanguage.swift */; };
-		1EEE4DC3201F203000E31814 /* BDAFWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEE4DC1201F203000E31814 /* BDAFWord.swift */; };
 		1EEE4DC6201F203700E31814 /* BantuDicoAlamofireApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEE4DC4201F203600E31814 /* BantuDicoAlamofireApiClient.swift */; };
 		1EEE4DC7201F203700E31814 /* BDAlamofireApiEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEE4DC5201F203700E31814 /* BDAlamofireApiEndpoint.swift */; };
 		1EEE4DCA201F28AD00E31814 /* supported_languages.json in Resources */ = {isa = PBXBuildFile; fileRef = 1EEE4DC9201F28AD00E31814 /* supported_languages.json */; };
 		1EEE4DCC201F28D600E31814 /* invalid_supported_languages.json in Resources */ = {isa = PBXBuildFile; fileRef = 1EEE4DCB201F28D600E31814 /* invalid_supported_languages.json */; };
 		1EEE4DD2201F690100E31814 /* BantuDicoAFLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEE4DD1201F690100E31814 /* BantuDicoAFLanguage.swift */; };
-		1EEE4DD4201F690D00E31814 /* BantuDicoAFWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEE4DD3201F690D00E31814 /* BantuDicoAFWord.swift */; };
 		1EEE4DD6201F7B3800E31814 /* SupportedLanguagesStubsSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEE4DD5201F7B3800E31814 /* SupportedLanguagesStubsSpec.swift */; };
 		1EEE4DD8201F876500E31814 /* valid_bdlanguage.json in Resources */ = {isa = PBXBuildFile; fileRef = 1EEE4DD7201F876500E31814 /* valid_bdlanguage.json */; };
 		1EEE4DDA201F878500E31814 /* invalid_bdlanguage.json in Resources */ = {isa = PBXBuildFile; fileRef = 1EEE4DD9201F878500E31814 /* invalid_bdlanguage.json */; };
 		1EEE4DDC201F87A900E31814 /* BDLanguageStubsSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEE4DDB201F87A900E31814 /* BDLanguageStubsSpec.swift */; };
 		1EEE4DDE202067A800E31814 /* valid_word_translation.json in Resources */ = {isa = PBXBuildFile; fileRef = 1EEE4DDD202067A800E31814 /* valid_word_translation.json */; };
 		1EEE4DE0202067CF00E31814 /* invalid_word_translation.json in Resources */ = {isa = PBXBuildFile; fileRef = 1EEE4DDF202067CE00E31814 /* invalid_word_translation.json */; };
-		1EEE4DE22020681800E31814 /* TranslationStubsSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEE4DE12020681800E31814 /* TranslationStubsSpec.swift */; };
+		1EEE4DE22020681800E31814 /* ModelsSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEE4DE12020681800E31814 /* ModelsSpec.swift */; };
 		1EEE4DE42020806100E31814 /* TestsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEE4DE32020806100E31814 /* TestsHelper.swift */; };
 		CB5FCB4B9053459F4618B5C8 /* Pods_BantuDicoAlamofireApiClientTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCB73657343286AC6BAF4AAC /* Pods_BantuDicoAlamofireApiClientTests.framework */; };
 		FADA8E1868D570743B708EA5 /* Pods_BantuDicoAlamofireApiClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC0B7721B17A81DAD649AB52 /* Pods_BantuDicoAlamofireApiClient.framework */; };
@@ -50,29 +48,27 @@
 		1E692EA82021C5630088FEC7 /* BDAFError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BDAFError.swift; sourceTree = "<group>"; };
 		1E692EAA2021E09E0088FEC7 /* AFError+BantuDicoAFError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AFError+BantuDicoAFError.swift"; sourceTree = "<group>"; };
 		1E692EAD202221360088FEC7 /* TanslationRequestsStubsSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TanslationRequestsStubsSpec.swift; sourceTree = "<group>"; };
-		1E692EB02022253B0088FEC7 /* bonjour_fr_sg_translation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = bonjour_fr_sg_translation.json; sourceTree = "<group>"; };
-		1E692EB2202229A20088FEC7 /* pourquoi_fr_sg_translation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = pourquoi_fr_sg_translation.json; sourceTree = "<group>"; };
+		1E692EB02022253B0088FEC7 /* hello_en_fr_translation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = hello_en_fr_translation.json; sourceTree = "<group>"; };
+		1EC7E808204070300068EB6E /* BantuDicoAFTranslation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BantuDicoAFTranslation.swift; sourceTree = "<group>"; };
+		1EC7E80A204071020068EB6E /* BDAFTranslation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BDAFTranslation.swift; sourceTree = "<group>"; };
 		1EEE4DA0201F1F6E00E31814 /* BantuDicoAlamofireApiClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BantuDicoAlamofireApiClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EEE4DA3201F1F6E00E31814 /* BantuDicoAlamofireApiClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BantuDicoAlamofireApiClient.h; sourceTree = "<group>"; };
 		1EEE4DA4201F1F6E00E31814 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1EEE4DA9201F1F6E00E31814 /* BantuDicoAlamofireApiClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BantuDicoAlamofireApiClientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1EEE4DAE201F1F6E00E31814 /* BantuDicoAlamofireApiClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BantuDicoAlamofireApiClientTests.swift; sourceTree = "<group>"; };
 		1EEE4DB0201F1F6E00E31814 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1EEE4DC0201F202F00E31814 /* BDAFLanguage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BDAFLanguage.swift; sourceTree = "<group>"; };
-		1EEE4DC1201F203000E31814 /* BDAFWord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BDAFWord.swift; sourceTree = "<group>"; };
 		1EEE4DC4201F203600E31814 /* BantuDicoAlamofireApiClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BantuDicoAlamofireApiClient.swift; sourceTree = "<group>"; };
 		1EEE4DC5201F203700E31814 /* BDAlamofireApiEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BDAlamofireApiEndpoint.swift; sourceTree = "<group>"; };
 		1EEE4DC9201F28AD00E31814 /* supported_languages.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = supported_languages.json; sourceTree = "<group>"; };
 		1EEE4DCB201F28D600E31814 /* invalid_supported_languages.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = invalid_supported_languages.json; sourceTree = "<group>"; };
 		1EEE4DD1201F690100E31814 /* BantuDicoAFLanguage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BantuDicoAFLanguage.swift; sourceTree = "<group>"; };
-		1EEE4DD3201F690D00E31814 /* BantuDicoAFWord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BantuDicoAFWord.swift; sourceTree = "<group>"; };
 		1EEE4DD5201F7B3800E31814 /* SupportedLanguagesStubsSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportedLanguagesStubsSpec.swift; sourceTree = "<group>"; };
 		1EEE4DD7201F876500E31814 /* valid_bdlanguage.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = valid_bdlanguage.json; sourceTree = "<group>"; };
 		1EEE4DD9201F878500E31814 /* invalid_bdlanguage.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = invalid_bdlanguage.json; sourceTree = "<group>"; };
 		1EEE4DDB201F87A900E31814 /* BDLanguageStubsSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BDLanguageStubsSpec.swift; sourceTree = "<group>"; };
 		1EEE4DDD202067A800E31814 /* valid_word_translation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = valid_word_translation.json; sourceTree = "<group>"; };
 		1EEE4DDF202067CE00E31814 /* invalid_word_translation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = invalid_word_translation.json; sourceTree = "<group>"; };
-		1EEE4DE12020681800E31814 /* TranslationStubsSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationStubsSpec.swift; sourceTree = "<group>"; };
+		1EEE4DE12020681800E31814 /* ModelsSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelsSpec.swift; sourceTree = "<group>"; };
 		1EEE4DE32020806100E31814 /* TestsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestsHelper.swift; sourceTree = "<group>"; };
 		7A98CE29C66F48C8BC35BA75 /* Pods-BantuDicoAlamofireApiClient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BantuDicoAlamofireApiClient.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BantuDicoAlamofireApiClient/Pods-BantuDicoAlamofireApiClient.debug.xcconfig"; sourceTree = "<group>"; };
 		B5B35871AD5C2E545347BDEF /* Pods-BantuDicoAlamofireApiClientTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BantuDicoAlamofireApiClientTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BantuDicoAlamofireApiClientTests/Pods-BantuDicoAlamofireApiClientTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -150,8 +146,7 @@
 				1EEE4DDB201F87A900E31814 /* BDLanguageStubsSpec.swift */,
 				1EEE4DD5201F7B3800E31814 /* SupportedLanguagesStubsSpec.swift */,
 				1E692EAD202221360088FEC7 /* TanslationRequestsStubsSpec.swift */,
-				1EEE4DAE201F1F6E00E31814 /* BantuDicoAlamofireApiClientTests.swift */,
-				1EEE4DE12020681800E31814 /* TranslationStubsSpec.swift */,
+				1EEE4DE12020681800E31814 /* ModelsSpec.swift */,
 				1EEE4DA1201F1F6E00E31814 /* Products */,
 				1EEE4DB0201F1F6E00E31814 /* Info.plist */,
 			);
@@ -161,9 +156,9 @@
 		1EEE4DBE201F201C00E31814 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				1EEE4DD3201F690D00E31814 /* BantuDicoAFWord.swift */,
+				1EC7E808204070300068EB6E /* BantuDicoAFTranslation.swift */,
+				1EC7E80A204071020068EB6E /* BDAFTranslation.swift */,
 				1EEE4DD1201F690100E31814 /* BantuDicoAFLanguage.swift */,
-				1EEE4DC1201F203000E31814 /* BDAFWord.swift */,
 				1EEE4DC0201F202F00E31814 /* BDAFLanguage.swift */,
 			);
 			path = Model;
@@ -184,12 +179,11 @@
 			children = (
 				1EEE4DC9201F28AD00E31814 /* supported_languages.json */,
 				1EEE4DCB201F28D600E31814 /* invalid_supported_languages.json */,
-				1EEE4DD7201F876500E31814 /* valid_bdlanguage.json */,
-				1EEE4DD9201F878500E31814 /* invalid_bdlanguage.json */,
 				1EEE4DDD202067A800E31814 /* valid_word_translation.json */,
 				1EEE4DDF202067CE00E31814 /* invalid_word_translation.json */,
-				1E692EB02022253B0088FEC7 /* bonjour_fr_sg_translation.json */,
-				1E692EB2202229A20088FEC7 /* pourquoi_fr_sg_translation.json */,
+				1EEE4DD7201F876500E31814 /* valid_bdlanguage.json */,
+				1EEE4DD9201F878500E31814 /* invalid_bdlanguage.json */,
+				1E692EB02022253B0088FEC7 /* hello_en_fr_translation.json */,
 			);
 			path = JSON;
 			sourceTree = "<group>";
@@ -320,9 +314,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E692EB12022253B0088FEC7 /* bonjour_fr_sg_translation.json in Resources */,
+				1E692EB12022253B0088FEC7 /* hello_en_fr_translation.json in Resources */,
 				1EEE4DDA201F878500E31814 /* invalid_bdlanguage.json in Resources */,
-				1E692EB3202229A20088FEC7 /* pourquoi_fr_sg_translation.json in Resources */,
 				1EEE4DDE202067A800E31814 /* valid_word_translation.json in Resources */,
 				1EEE4DCC201F28D600E31814 /* invalid_supported_languages.json in Resources */,
 				1EEE4DCA201F28AD00E31814 /* supported_languages.json in Resources */,
@@ -436,13 +429,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				1EEE4DC2201F203000E31814 /* BDAFLanguage.swift in Sources */,
-				1EEE4DD4201F690D00E31814 /* BantuDicoAFWord.swift in Sources */,
-				1EEE4DC3201F203000E31814 /* BDAFWord.swift in Sources */,
+				1EC7E80B204071020068EB6E /* BDAFTranslation.swift in Sources */,
 				1EEE4DC7201F203700E31814 /* BDAlamofireApiEndpoint.swift in Sources */,
 				1EEE4DD2201F690100E31814 /* BantuDicoAFLanguage.swift in Sources */,
 				1EEE4DC6201F203700E31814 /* BantuDicoAlamofireApiClient.swift in Sources */,
 				1E692EAB2021E09E0088FEC7 /* AFError+BantuDicoAFError.swift in Sources */,
 				1E692EA92021C5630088FEC7 /* BDAFError.swift in Sources */,
+				1EC7E809204070300068EB6E /* BantuDicoAFTranslation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -450,9 +443,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1EEE4DE22020681800E31814 /* TranslationStubsSpec.swift in Sources */,
+				1EEE4DE22020681800E31814 /* ModelsSpec.swift in Sources */,
 				1E692EAE202221360088FEC7 /* TanslationRequestsStubsSpec.swift in Sources */,
-				1EEE4DAF201F1F6E00E31814 /* BantuDicoAlamofireApiClientTests.swift in Sources */,
 				1EEE4DDC201F87A900E31814 /* BDLanguageStubsSpec.swift in Sources */,
 				1EEE4DE42020806100E31814 /* TestsHelper.swift in Sources */,
 				1EEE4DD6201F7B3800E31814 /* SupportedLanguagesStubsSpec.swift in Sources */,
