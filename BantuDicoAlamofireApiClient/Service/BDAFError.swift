@@ -13,7 +13,7 @@ import Foundation
 ///
 /// - unknownError:                Returned when an error is unknown.
 /// - invalidURL:                  Returned when a URL is invalid.
-/// -jsonMappingFailed:            Returned when the JSON mapping failed.
+/// - jsonMappingFailed:            Returned when the JSON mapping failed.
 /// - parameterEncodingFailed:     Returned when a parameter encoding object throws an error during the encoding process.
 /// - responseValidationFailed:    Returned when a response code is not valid.
 /// - responseSerializationFailed: Returned when a response serializer encounters an error in the serialization process.
@@ -75,7 +75,7 @@ public enum BDAFError {
 
 // MARK: - Convenience Properties
 
-extension BDAFError {
+public extension BDAFError {
     
     /// The `Error` returned by a system framework associated with a `.parameterEncodingFailed`,
     /// or `.responseSerializationFailed` error.
@@ -131,8 +131,8 @@ extension BDAFError {
     }
 }
 
-extension BDAFError.ParameterEncodingFailureReason {
-    var underlyingError: Error? {
+public extension BDAFError.ParameterEncodingFailureReason {
+    public var underlyingError: Error? {
         switch self {
         case .jsonEncodingFailed(let error):
             return error
@@ -142,8 +142,8 @@ extension BDAFError.ParameterEncodingFailureReason {
     }
 }
 
-extension BDAFError.ResponseValidationFailureReason {
-    var acceptableContentTypes: [String]? {
+public extension BDAFError.ResponseValidationFailureReason {
+    public var acceptableContentTypes: [String]? {
         switch self {
         case .missingContentType(let types), .unacceptableContentType(let types, _):
             return types
@@ -152,7 +152,7 @@ extension BDAFError.ResponseValidationFailureReason {
         }
     }
     
-    var responseContentType: String? {
+    public var responseContentType: String? {
         switch self {
         case .unacceptableContentType(_, let responseType):
             return responseType
@@ -161,7 +161,7 @@ extension BDAFError.ResponseValidationFailureReason {
         }
     }
     
-    var responseCode: Int? {
+    public var responseCode: Int? {
         switch self {
         case .unacceptableStatusCode(let code):
             return code
@@ -171,8 +171,8 @@ extension BDAFError.ResponseValidationFailureReason {
     }
 }
 
-extension BDAFError.ResponseSerializationFailureReason {
-    var failedStringEncoding: String.Encoding? {
+public extension BDAFError.ResponseSerializationFailureReason {
+    public var failedStringEncoding: String.Encoding? {
         switch self {
         case .stringSerializationFailed(let encoding):
             return encoding
@@ -181,7 +181,7 @@ extension BDAFError.ResponseSerializationFailureReason {
         }
     }
     
-    var underlyingError: Error? {
+    public var underlyingError: Error? {
         switch self {
         case .jsonSerializationFailed(let error):
             return error
