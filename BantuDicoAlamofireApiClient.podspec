@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "BantuDicoAlamofireApiClient"
-  s.version      = "1.1.1"
+  s.version      = "1.2.1"
   s.summary      = "A network utility for calling Bantu Dico APIs."
 
   # This description is used to generate tags and improve search results.
