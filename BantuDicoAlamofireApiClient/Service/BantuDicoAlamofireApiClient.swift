@@ -18,6 +18,11 @@ public class BantuDicoAlamofireApiClient {
     private let baseURL: String
     private let sessionManager: SessionManager
     
+    /// Create a BantuDicoAlamofireApiClient instance.
+    ///
+    /// - Parameters:
+    ///   - configuration: URLSessionConfiguration.
+    ///   - baseURL: the base URL of the remote server.
     public init(configuration: URLSessionConfiguration = URLSessionConfiguration.default, baseURL: String) {
         sessionManager = SessionManager(configuration: configuration)
         self.baseURL = baseURL
