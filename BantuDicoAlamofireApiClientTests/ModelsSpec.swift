@@ -15,7 +15,7 @@ import OHHTTPStubs
 
 @testable import BantuDicoAlamofireApiClient
 
-class TranslationStubsSpec: QuickSpec {
+class ModelsSpec: QuickSpec {
     
     override func spec() {
         
@@ -25,12 +25,11 @@ class TranslationStubsSpec: QuickSpec {
                 
                 it("Should not be nil", closure: {
                     
-                    let mapper = Mapper<BantuDicoAFWord>()
-                    let dictionary = TestsHelper.JSONFromFile("valid_word_translation")!
-                    let array = dictionary["translations"]
-                    let translations = try? mapper.mapArray(JSONArray: array as! [[String : Any]])
+                    let mapper = Mapper<BantuDicoAFTranslation>()
+                    let json = TestsHelper.JSONFromFile("valid_word_translation")!
+                    let translation = try? mapper.map(JSON: json)
                     
-                    expect(translations).toNot(beNil())
+                    expect(translation).toNot(beNil())
                 })
             })
             
@@ -38,12 +37,11 @@ class TranslationStubsSpec: QuickSpec {
                 
                 it("Should be nil", closure: {
                     
-                    let mapper = Mapper<BantuDicoAFWord>()
-                    let dictionary = TestsHelper.JSONFromFile("invalid_word_translation")!
-                    let array = dictionary["translations"]
-                    let translations = try? mapper.mapArray(JSONArray: array as! [[String : Any]])
+                    let mapper = Mapper<BantuDicoAFTranslation>()
+                    let json = TestsHelper.JSONFromFile("invalid_word_translation")
+                    let translation = try? mapper.map(JSONObject: json as Any)
                     
-                    expect(translations).to(beNil())
+                    expect(translation).to(beNil())
                 })
             })
         }

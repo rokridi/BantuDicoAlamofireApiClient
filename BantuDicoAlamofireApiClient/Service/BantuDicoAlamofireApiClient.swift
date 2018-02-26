@@ -10,15 +10,15 @@ import Foundation
 import Alamofire
 import AlamofireObjectMapper
 
-typealias TranslationCompletionHandler = ([BDAFWord]?, Error?) -> Void
-typealias SupportedLanguagesCompletionHandler = ([BDAFLanguage]?, Error?) -> Void
+public typealias TranslationCompletionHandler = (BDAFTranslation?, Error?) -> Void
+public typealias SupportedLanguagesCompletionHandler = ([BDAFLanguage]?, Error?) -> Void
 
-class BantuDicoAlamofireApiClient {
+public class BantuDicoAlamofireApiClient {
     
-    let baseURL: String
+    private let baseURL: String
     private let sessionManager: SessionManager
     
-    init(configuration: URLSessionConfiguration = URLSessionConfiguration.default, baseURL: String) {
+    public init(configuration: URLSessionConfiguration = URLSessionConfiguration.default, baseURL: String) {
         sessionManager = SessionManager(configuration: configuration)
         self.baseURL = baseURL
     }
@@ -26,12 +26,21 @@ class BantuDicoAlamofireApiClient {
 
 //MARK: - API
 
-extension BantuDicoAlamofireApiClient {
+public extension BantuDicoAlamofireApiClient {
     
+    /// Translates a word.
+    ///
+    /// - Parameters:
+    ///   - word: the word to translate.
+    ///   - sourceLanguage: the language of word.
+    ///   - destinationLanguage: the language to which word will be translated.
+    ///   - queue: the queue on which completion will be called when the task finishes.
+    ///   - completion: closure to be called when task finishes.
+    /// - Returns: URLSessionTask
     public func translate(word: String,
                    sourceLanguage: String,
                    destinationLanguage: String,
-                   queue: DispatchQueue? = DispatchQueue.main,
+                   queue: DispatchQueue = DispatchQueue.main,
                    completion: TranslationCompletionHandler?) -> URLSessionTask? {
         
         let request = BDAlamofireApiEndpoint.translate(word, sourceLanguage, destinationLanguage, baseURL)
@@ -39,22 +48,26 @@ extension BantuDicoAlamofireApiClient {
         let dataRequest = sessionManager.request(request)
             .validate(statusCode: 200..<300)
             .validate(contentType: ["application/json"])
-            .responseArray(keyPath: "translations", completionHandler: { (response:DataResponse<[BantuDicoAFWord]>) in
+            .responseObject(completionHandler: { [weak self] (response:DataResponse<BantuDicoAFTranslation>) in
                 
                 switch response.result {
-                case .success(let translations):
-                    queue?.async { completion?(translations.map({$0.asBDAFWord()}), nil) }
+                case .success(let translation):
+                    queue.async { completion?(translation.asBDAFTranslation(), nil) }
                 case .failure(let error):
-                    queue?.async {
-                        completion?(nil, self.completionErrorFrom(error: error))
-                    }
+                    queue.async { completion?(nil, self?.finalErrorFrom(error: error)) }
                 }
             })
         
         return dataRequest.task
     }
     
-    public func fetchSupportedLanguages(queue: DispatchQueue? = DispatchQueue.main,
+    /// Fetches languages that are supported for translation.
+    ///
+    /// - Parameters:
+    ///   - queue: the queue on which completion will be called when the task finishes.
+    ///   - completion: closure to be called when task finishes.
+    /// - Returns: URLSessionTask.
+    public func fetchSupportedLanguages(queue: DispatchQueue = DispatchQueue.main,
                                  completion: SupportedLanguagesCompletionHandler?) -> URLSessionTask? {
         
         let request = BDAlamofireApiEndpoint.supportedLanguages(baseURL)
@@ -62,16 +75,16 @@ extension BantuDicoAlamofireApiClient {
         let dataRequest = sessionManager.request(request)
             .validate(statusCode: 200..<300)
             .validate(contentType: ["application/json"])
-            .responseArray(keyPath: "supported_languages", completionHandler: { (response:DataResponse<[BantuDicoAFLanguage]>) in
+            .responseArray(keyPath: "supported_languages", completionHandler: { [weak self] (response:DataResponse<[BantuDicoAFLanguage]>) in
                 
                 switch response.result {
                 case .success(let bdLanguages):
-                    queue?.async {
+                    queue.async {
                         completion?(bdLanguages.map({$0.asBDAFLanguage()}), nil)
                     }
                 case .failure(let error):
-                    queue?.async {
-                        completion?(nil, self.completionErrorFrom(error: error))
+                    queue.async {
+                        completion?(nil, self?.finalErrorFrom(error: error))
                     }
                 }
             })
@@ -82,7 +95,7 @@ extension BantuDicoAlamofireApiClient {
 
 private extension BantuDicoAlamofireApiClient {
     
-    func completionErrorFrom(error: Error) -> Error {
+    func finalErrorFrom(error: Error) -> Error {
         
         if let afError = error as? AFError {
             return afError.asBantuDicoAFError()
