@@ -48,16 +48,14 @@ class TestsHelper {
         return translations!.map({ $0.asBDAFLanguage() })
     }
     
-    static func bantuDicoWordsFromJSONFile(_ file: String) -> [BDAFWord] {
+    static func bantuDicoTranslationsFromJSONFile(_ file: String) -> BDAFTranslation {
         
-        let dictionary = TestsHelper.JSONFromFile(file)
+        let dictionary = TestsHelper.JSONFromFile(file)!
         
-        let array = dictionary!["translations"]
+        let mapper = Mapper<BantuDicoAFTranslation>()
+        let translation = try! mapper.map(JSON: dictionary)
         
-        let mapper = Mapper<BantuDicoAFWord>()
-        let translations = mapper.mapArray(JSONObject: array)
-        
-        return translations!.map({ $0.asBDAFWord() })
+        return translation.asBDAFTranslation()
     }
 }
 
