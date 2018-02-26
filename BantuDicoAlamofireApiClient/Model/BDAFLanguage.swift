@@ -8,13 +8,12 @@
 
 import Foundation
 
+/// Represents a translation language that is supported by Bantu Dico API.
 public struct BDAFLanguage {
     
+    /// Identifier of the language.
     let identifier: Int
-    let code: String
     
-    init(identifier: Int, code: String) {
-        self.identifier = identifier
-        self.code = code
-    }
+    /// Launguage code. i.e: 'en'
+    let code: String
 }

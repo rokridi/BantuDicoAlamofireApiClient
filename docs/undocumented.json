@@ -1,227 +1,150 @@
 {
   "warnings": [
     {
-      "file": "/Users/mohamedaymenlandolsi/Desktop/BantuDicoalamofireApiClient/BantuDicoAlamofireApiClient/Model/BDAFLanguage.swift",
-      "line": 11,
-      "symbol": "BDAFLanguage",
-      "symbol_kind": "source.lang.swift.decl.struct",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/mohamedaymenlandolsi/Desktop/BantuDicoalamofireApiClient/BantuDicoAlamofireApiClient/Model/BDAFTranslation.swift",
-      "line": 11,
-      "symbol": "BDAFTranslation",
-      "symbol_kind": "source.lang.swift.decl.struct",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/mohamedaymenlandolsi/Desktop/BantuDicoalamofireApiClient/BantuDicoAlamofireApiClient/Model/BDAFTranslation.swift",
-      "line": 13,
-      "symbol": "BDAFTranslation.word",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/mohamedaymenlandolsi/Desktop/BantuDicoalamofireApiClient/BantuDicoAlamofireApiClient/Model/BDAFTranslation.swift",
-      "line": 14,
-      "symbol": "BDAFTranslation.language",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/mohamedaymenlandolsi/Desktop/BantuDicoalamofireApiClient/BantuDicoAlamofireApiClient/Model/BDAFTranslation.swift",
-      "line": 15,
-      "symbol": "BDAFTranslation.translationLanguage",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/mohamedaymenlandolsi/Desktop/BantuDicoalamofireApiClient/BantuDicoAlamofireApiClient/Model/BDAFTranslation.swift",
-      "line": 16,
-      "symbol": "BDAFTranslation.translations",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
       "file": "/Users/mohamedaymenlandolsi/Desktop/BantuDicoalamofireApiClient/BantuDicoAlamofireApiClient/Service/BDAFError.swift",
-      "line": null,
-      "symbol": "BDAFError",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/mohamedaymenlandolsi/Desktop/BantuDicoalamofireApiClient/BantuDicoAlamofireApiClient/Service/BDAFError.swift",
-      "line": null,
-      "symbol": "BDAFError",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/mohamedaymenlandolsi/Desktop/BantuDicoalamofireApiClient/BantuDicoAlamofireApiClient/Service/BDAFError.swift",
-      "line": 11,
-      "symbol": "BDAFError",
-      "symbol_kind": "source.lang.swift.decl.enum",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/mohamedaymenlandolsi/Desktop/BantuDicoalamofireApiClient/BantuDicoAlamofireApiClient/Service/BDAFError.swift",
-      "line": 20,
+      "line": 28,
       "symbol": "BDAFError.ParameterEncodingFailureReason.missingURL",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/mohamedaymenlandolsi/Desktop/BantuDicoalamofireApiClient/BantuDicoAlamofireApiClient/Service/BDAFError.swift",
-      "line": 21,
+      "line": 29,
       "symbol": "BDAFError.ParameterEncodingFailureReason.jsonEncodingFailed",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/mohamedaymenlandolsi/Desktop/BantuDicoalamofireApiClient/BantuDicoAlamofireApiClient/Service/BDAFError.swift",
-      "line": 22,
+      "line": 30,
       "symbol": "BDAFError.ParameterEncodingFailureReason.unknownReason",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/mohamedaymenlandolsi/Desktop/BantuDicoalamofireApiClient/BantuDicoAlamofireApiClient/Service/BDAFError.swift",
-      "line": 35,
+      "line": 43,
       "symbol": "BDAFError.ResponseValidationFailureReason.dataFileNil",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/mohamedaymenlandolsi/Desktop/BantuDicoalamofireApiClient/BantuDicoAlamofireApiClient/Service/BDAFError.swift",
-      "line": 36,
+      "line": 44,
       "symbol": "BDAFError.ResponseValidationFailureReason.dataFileReadFailed",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/mohamedaymenlandolsi/Desktop/BantuDicoalamofireApiClient/BantuDicoAlamofireApiClient/Service/BDAFError.swift",
-      "line": 37,
+      "line": 45,
       "symbol": "BDAFError.ResponseValidationFailureReason.missingContentType",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/mohamedaymenlandolsi/Desktop/BantuDicoalamofireApiClient/BantuDicoAlamofireApiClient/Service/BDAFError.swift",
-      "line": 38,
+      "line": 46,
       "symbol": "BDAFError.ResponseValidationFailureReason.unacceptableContentType",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/mohamedaymenlandolsi/Desktop/BantuDicoalamofireApiClient/BantuDicoAlamofireApiClient/Service/BDAFError.swift",
-      "line": 39,
+      "line": 47,
       "symbol": "BDAFError.ResponseValidationFailureReason.unacceptableStatusCode",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/mohamedaymenlandolsi/Desktop/BantuDicoalamofireApiClient/BantuDicoAlamofireApiClient/Service/BDAFError.swift",
-      "line": 51,
+      "line": 59,
       "symbol": "BDAFError.ResponseSerializationFailureReason.inputDataNil",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/mohamedaymenlandolsi/Desktop/BantuDicoalamofireApiClient/BantuDicoAlamofireApiClient/Service/BDAFError.swift",
-      "line": 52,
+      "line": 60,
       "symbol": "BDAFError.ResponseSerializationFailureReason.inputDataNilOrZeroLength",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/mohamedaymenlandolsi/Desktop/BantuDicoalamofireApiClient/BantuDicoAlamofireApiClient/Service/BDAFError.swift",
-      "line": 53,
+      "line": 61,
       "symbol": "BDAFError.ResponseSerializationFailureReason.inputFileNil",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/mohamedaymenlandolsi/Desktop/BantuDicoalamofireApiClient/BantuDicoAlamofireApiClient/Service/BDAFError.swift",
-      "line": 54,
+      "line": 62,
       "symbol": "BDAFError.ResponseSerializationFailureReason.inputFileReadFailed",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/mohamedaymenlandolsi/Desktop/BantuDicoalamofireApiClient/BantuDicoAlamofireApiClient/Service/BDAFError.swift",
-      "line": 55,
+      "line": 63,
       "symbol": "BDAFError.ResponseSerializationFailureReason.stringSerializationFailed",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/mohamedaymenlandolsi/Desktop/BantuDicoalamofireApiClient/BantuDicoAlamofireApiClient/Service/BDAFError.swift",
-      "line": 56,
+      "line": 64,
       "symbol": "BDAFError.ResponseSerializationFailureReason.jsonSerializationFailed",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/mohamedaymenlandolsi/Desktop/BantuDicoalamofireApiClient/BantuDicoAlamofireApiClient/Service/BDAFError.swift",
-      "line": 57,
+      "line": 65,
       "symbol": "BDAFError.ResponseSerializationFailureReason.unknownReason",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/mohamedaymenlandolsi/Desktop/BantuDicoalamofireApiClient/BantuDicoAlamofireApiClient/Service/BDAFError.swift",
-      "line": 60,
+      "line": 68,
       "symbol": "BDAFError.unknownError",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/mohamedaymenlandolsi/Desktop/BantuDicoalamofireApiClient/BantuDicoAlamofireApiClient/Service/BDAFError.swift",
-      "line": 61,
+      "line": 69,
       "symbol": "BDAFError.invalidURL",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/mohamedaymenlandolsi/Desktop/BantuDicoalamofireApiClient/BantuDicoAlamofireApiClient/Service/BDAFError.swift",
-      "line": 62,
+      "line": 70,
       "symbol": "BDAFError.jsonMappingFailed",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/mohamedaymenlandolsi/Desktop/BantuDicoalamofireApiClient/BantuDicoAlamofireApiClient/Service/BDAFError.swift",
-      "line": 63,
+      "line": 71,
       "symbol": "BDAFError.parameterEncodingFailed",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/mohamedaymenlandolsi/Desktop/BantuDicoalamofireApiClient/BantuDicoAlamofireApiClient/Service/BDAFError.swift",
-      "line": 64,
+      "line": 72,
       "symbol": "BDAFError.responseValidationFailed",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/mohamedaymenlandolsi/Desktop/BantuDicoalamofireApiClient/BantuDicoAlamofireApiClient/Service/BDAFError.swift",
-      "line": 65,
+      "line": 73,
       "symbol": "BDAFError.responseSerializationFailed",
       "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/mohamedaymenlandolsi/Desktop/BantuDicoalamofireApiClient/BantuDicoAlamofireApiClient/Service/BantuDicoAlamofireApiClient.swift",
-      "line": null,
-      "symbol": "BantuDicoAlamofireApiClient",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/mohamedaymenlandolsi/Desktop/BantuDicoalamofireApiClient/BantuDicoAlamofireApiClient/Service/BantuDicoAlamofireApiClient.swift",
-      "line": 16,
-      "symbol": "BantuDicoAlamofireApiClient",
-      "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
     }
   ],

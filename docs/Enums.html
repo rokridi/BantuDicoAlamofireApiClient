@@ -13,7 +13,7 @@
     <a title="Enumerations  Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="index.html">BantuDicoAlamofireApiClient Docs</a> (27% documented)</p>
+        <p><a href="index.html">BantuDicoAlamofireApiClient Docs</a> (52% documented)</p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -87,7 +87,17 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p><code>BDAFError</code> is the error type returned by BantuDicoAlamofireApiClient. It encompasses a few different types of errors, each with
+their own associated reasons.</p>
+
+<ul>
+<li>unknownError:                Returned when an error is unknown.</li>
+<li>invalidURL:                  Returned when a URL is invalid.
+-jsonMappingFailed:            Returned when the JSON mapping failed.</li>
+<li>parameterEncodingFailed:     Returned when a parameter encoding object throws an error during the encoding process.</li>
+<li>responseValidationFailed:    Returned when a response code is not valid.</li>
+<li>responseSerializationFailed: Returned when a response serializer encounters an error in the serialization process.</li>
+</ul>
 
                         <a href="Enums/BDAFError.html" class="slightly-smaller">See more</a>
                       </div>

@@ -13,6 +13,7 @@ import AlamofireObjectMapper
 public typealias TranslationCompletionHandler = (BDAFTranslation?, Error?) -> Void
 public typealias SupportedLanguagesCompletionHandler = ([BDAFLanguage]?, Error?) -> Void
 
+/// HTTP client built over Alamofire. Allows to use Bantu Dico APIs for translation.
 public class BantuDicoAlamofireApiClient {
     
     private let baseURL: String

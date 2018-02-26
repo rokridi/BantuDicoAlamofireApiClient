@@ -8,13 +8,21 @@
 
 import Foundation
 
+/// `BDAFError` is the error type returned by BantuDicoAlamofireApiClient. It encompasses a few different types of errors, each with
+/// their own associated reasons.
+///
+/// - unknownError:                Returned when an error is unknown.
+/// - invalidURL:                  Returned when a URL is invalid.
+/// -jsonMappingFailed:            Returned when the JSON mapping failed.
+/// - parameterEncodingFailed:     Returned when a parameter encoding object throws an error during the encoding process.
+/// - responseValidationFailed:    Returned when a response code is not valid.
+/// - responseSerializationFailed: Returned when a response serializer encounters an error in the serialization process.
 public enum BDAFError {
     
     /// The underlying reason the parameter encoding error occurred.
     ///
     /// - missingURL:                 The URL request did not have a URL to encode.
-    /// - jsonEncodingFailed:         JSON serialization failed with an underlying system error during the
-    ///                               encoding process.
+    /// - jsonEncodingFailed:         JSON serialization failed with an underlying system error during the encoding process.
     /// - unknownReason:              The failure reason is unknown.
     public enum ParameterEncodingFailureReason {
         case missingURL
@@ -63,7 +71,6 @@ public enum BDAFError {
     case parameterEncodingFailed(reason: ParameterEncodingFailureReason)
     case responseValidationFailed(reason: ResponseValidationFailureReason)
     case responseSerializationFailed(reason: ResponseSerializationFailureReason)
-    
 }
 
 // MARK: - Convenience Properties
