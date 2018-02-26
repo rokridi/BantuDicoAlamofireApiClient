@@ -1,4 +1,4 @@
-# BantuDicoalamofireApiClient
+# BantuDicoAlamofireApiClient
 
 ## Features
 
@@ -20,14 +20,14 @@
 $ gem install cocoapods
 ```
 
-To integrate Alamofire into your Xcode project using CocoaPods, specify it in your ```Podfile```:
+To integrate BantuDicoAlamofireApiClient into your Xcode project using CocoaPods, specify it in your ```Podfile```:
 
 ```
 platform :ios, '10.0'
 use_frameworks!
 
 target '<Your Target Name>' do
-    pod 'BantuDicoAlamofireApiClient', :git=> 'https://github.com/rokridi/BantuDicoalamofireApiClient.git'
+    pod 'BantuDicoAlamofireApiClient', :git=> 'https://github.com/rokridi/BantuDicoAlamofireApiClient.git'
 end
 ```
 Then, run the following command:
