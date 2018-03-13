@@ -8,7 +8,7 @@
 
 import Foundation
 
-/// Reperents a result of a translation done via Bantu Dico API.
+/// Represents a result of a translation done via Bantu Dico API.
 public struct BDAFTranslation {
     
     /// Translated word.
